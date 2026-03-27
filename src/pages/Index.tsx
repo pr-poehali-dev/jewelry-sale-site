@@ -485,9 +485,14 @@ export default function Index() {
                       <span>{cartTotal.toLocaleString("ru-RU")} ₽</span>
                     </div>
                   </div>
-                  <button className="btn-gold w-full py-4 text-xs tracking-[0.2em] uppercase mb-3">
+                  <a
+                    href={`https://t.me/YuliyaKozha?text=${encodeURIComponent("Здравствуйте! Хочу оформить заказ:\n\n" + cart.map(i => `• ${i.product.name} × ${i.qty} — ${(i.product.price * i.qty).toLocaleString("ru-RU")} ₽`).join("\n") + `\n\nИтого: ${cartTotal.toLocaleString("ru-RU")} ₽`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-gold w-full py-4 text-xs tracking-[0.2em] uppercase mb-3 block text-center"
+                  >
                     Оформить заказ
-                  </button>
+                  </a>
                   <button onClick={() => setPage("catalog")} className="btn-outline-gold w-full py-3 text-xs tracking-widest uppercase">
                     Продолжить покупки
                   </button>
