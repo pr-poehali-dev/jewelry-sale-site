@@ -215,9 +215,9 @@ export default function Index() {
               <button onClick={() => setPage("catalog")} className="btn-gold px-10 py-4 text-xs tracking-[0.2em] uppercase">
                 Смотреть коллекцию
               </button>
-              <button className="btn-outline-gold px-10 py-4 text-xs tracking-[0.2em] uppercase">
+              <a href="https://t.me/KozhaJewelry" target="_blank" rel="noopener noreferrer" className="btn-outline-gold px-10 py-4 text-xs tracking-[0.2em] uppercase">
                 О нас
-              </button>
+              </a>
             </div>
 
             <div className="animate-fade-in-delay-4 absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
