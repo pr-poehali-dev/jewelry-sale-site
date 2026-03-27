@@ -133,7 +133,7 @@ export default function Index() {
           className="font-display text-2xl tracking-[0.3em] font-light"
           style={{ color: "var(--gold)" }}
         >
-          AURUM
+          Kozha Jewelry
         </button>
 
         <div className="hidden md:flex items-center gap-10">
